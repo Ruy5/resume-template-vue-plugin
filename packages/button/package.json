@@ -1,0 +1,30 @@
+{
+  "name": "ru-resume-test-button",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "RU <ru@feli.top>",
+  "homepage": "https://github.com/Ruy5/resume-template-vue-plugin#readme",
+  "license": "ISC",
+  "main": "lib/button.vue",
+  "type": "module",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruy5/resume-template-vue-plugin.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/button.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Ruy5/resume-template-vue-plugin/issues"
+  }
+}
