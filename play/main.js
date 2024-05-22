@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import RuButton from "ru-resume-test-button/index.js"
+import ResumeTemplate from "ru-resume-template"
 
 const app = createApp(App)
-app.use(RuButton)
+app.use(ResumeTemplate)
 app.mount("#app")
