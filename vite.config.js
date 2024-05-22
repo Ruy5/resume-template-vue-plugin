@@ -18,7 +18,7 @@ export default defineConfig({
      },
    },
    lib: {
-     entry: './packages/button/index.js',
+     entry: './packages/resume-template/index.js',
      name: 'ru-button',
    },
  },
