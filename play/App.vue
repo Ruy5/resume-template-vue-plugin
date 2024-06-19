@@ -1,7 +1,7 @@
 <template>
     <div class="box">
-        <ResumeTemplateA :data="data"  :disabled="disabled"></ResumeTemplateA>
-        <!-- <ResumeTemplateB ></ResumeTemplateB> -->
+        <!-- <ResumeTemplateA :data="data"  :disabled="disabled"></ResumeTemplateA> -->
+        <ResumeTemplateB :data="data"  :disabled="disabled"></ResumeTemplateB>
     </div>
    
 </template>
