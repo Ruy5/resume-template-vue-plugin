@@ -1,14 +1,14 @@
 {
   "name": "resume-template-vue3-plugin",
   "private": false,
-  "version": "0.0.6",
+  "version": "1.0.0",
   "workspaces": [
     "packages/*"
   ],
   "type": "module",
   "scripts": {
     "dev": "npx vite ./play",
-    "build": "vite build",
+    "build": "vite build & node ./build.js",
     "build:slice": "node ./build.js"
   },
   "files": [
