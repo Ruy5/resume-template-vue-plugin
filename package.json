@@ -8,7 +8,8 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite ./play",
-    "build": "vite build"
+    "build": "vite build",
+    "build:slice": "node ./build.js"
   },
   "files": [
     "dist/*"
