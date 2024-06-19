@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <BlockHeader title="教育背景" @addItem="data.educationalBackground.push({})" :disabled="data.disabled">
+      <BlockHeader title="教育背景" @addItem="data.educationalBackground.push({})" :disabled="data.disabled" >
         <template #icon>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
             width="28.333332061767578" height="28.333332061767578" viewBox="0 0 28.333332061767578 28.333332061767578">
