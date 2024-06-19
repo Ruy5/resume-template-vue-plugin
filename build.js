@@ -11,7 +11,7 @@ const librarys = components.map((name) => {
   return {
     entry: `./packages/resume-template/index${name}.js`,
     name: `ru-resume-template${name}`,
-    formats: ['umd'],
+    // formats: ['umd'],
     
     fileName: (format) => {
         console.log("******", format)
