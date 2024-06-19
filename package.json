@@ -7,7 +7,7 @@
   ],
   "type": "module",
   "scripts": {
-    "dev": "npx vite .\\play",
+    "dev": "npx vite ./play",
     "build": "vite build"
   },
   "files": [
