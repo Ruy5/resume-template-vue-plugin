@@ -4,7 +4,6 @@
       {{ data.disabled == true ? "预览" : "编辑" }}
     </div>
     <div style="
-        background-color: #068359; 
         height: 4rem; 
         width: 95%; 
         margin: 1rem 0; 
@@ -13,7 +12,12 @@
         justify-content: center;
         color: white;
         font-size: 2rem;
-      ">
+      "
+      :style="{
+        
+        'background-color': props.color
+      }"
+      >
       个人简历
     </div>
     <div style="
@@ -22,7 +26,7 @@
         display: flex;
       ">
       <div style="width: 80%; padding-right: 2rem;">
-        <BlockHeader title="基本信息" @addItem="data.baseKw.push(['', ''])" :disabled="data.disabled">
+        <BlockHeader title="基本信息" @addItem="data.baseKw.push(['', ''])" :disabled="data.disabled" :color="props.color">
           <template #context>
             <div class="ru-personage-kws">
               <div class="ru-personage-item" v-for="job, index in data.jobKw" :key="index">
@@ -51,7 +55,7 @@
         display: flex;
       ">
      <div style="width: 100%;">
-      <BlockHeader title="教育背景" @addItem="data.educationalBackground.push({})" :disabled="data.disabled">
+      <BlockHeader title="教育背景" @addItem="data.educationalBackground.push({})" :disabled="data.disabled" :color="props.color">
 
         <template #context>
           <div v-for="ebItem in data.educationalBackground">
@@ -87,7 +91,7 @@
         display: flex;
       ">
      <div style="width: 100%;">
-      <BlockHeader title="工作经验" @addItem="data.workExperience.push({})" :disabled="data.disabled">
+      <BlockHeader title="工作经验" @addItem="data.workExperience.push({})" :disabled="data.disabled" :color="props.color">
         <template #context>
           <div v-for="weItem in data.workExperience">
             <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
@@ -114,7 +118,7 @@
         display: flex;
       ">
      <div style="width: 100%;">
-      <BlockHeader title="荣誉证书"  @addItem="data.certificateOfHonor.push({})" :disabled="data.disabled">
+      <BlockHeader title="荣誉证书"  @addItem="data.certificateOfHonor.push({})" :disabled="data.disabled" :color="props.color">
         <template #context>
           <div style="display: flex; justify-content: space-between;" v-for="cohItem, index in data.certificateOfHonor" :key="index">
             <input type="text" placeholder="证书名称" v-model="cohItem.certificateName" :disabled="data.disabled">
@@ -132,7 +136,7 @@
         display: flex;
       ">
      <div style="width: 100%;">
-      <BlockHeader title="自我评价">
+      <BlockHeader title="自我评价" :color="props.color">
         <template #context>
           <textarea rows="4" style="width: 100%;" v-model="data.selfEvaluation" :disabled="data.disabled"></textarea>
         </template>
@@ -158,6 +162,10 @@ const props = defineProps({
   disabled: {
     type: Boolean,
     default: true
+  },
+  color: {
+    type: String,
+    default: "#068359"
   }
 })
 

@@ -1,5 +1,7 @@
 <template>
-  <div id="ru-page" style="background-color: rgb(207, 207, 207);">
+  <div id="ru-page" :style="{
+    'background-color': props.color
+  }">
     <div v-if="!disabled" style="position: absolute; z-index: 2; right: 0.5rem; top: 0.5;" @click="setDisable">
       {{ data.disabled == true ? "预览" : "编辑" }}
     </div>
@@ -32,7 +34,7 @@
         </div>
       </div>
 
-      <BlockHeader title="教育背景" @addItem="data.educationalBackground.push({})" :disabled="data.disabled" >
+      <BlockHeader title="教育背景" @addItem="data.educationalBackground.push({})" :disabled="data.disabled" :color="props.color">
         <template #icon>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
             width="28.333332061767578" height="28.333332061767578" viewBox="0 0 28.333332061767578 28.333332061767578">
@@ -68,7 +70,7 @@
         </template>
       </BlockHeader>
 
-      <BlockHeader title="工作经验" @addItem="data.workExperience.push({})" :disabled="data.disabled">
+      <BlockHeader title="工作经验" @addItem="data.workExperience.push({})" :disabled="data.disabled" :color="props.color">
         <template #icon>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
             width="29.33333396911621" height="26.666667938232422" viewBox="0 0 29.33333396911621 26.666667938232422">
@@ -97,7 +99,7 @@
         </template>
       </BlockHeader>
 
-      <BlockHeader title="荣誉证书" @addItem="data.certificateOfHonor.push({})" :disabled="data.disabled">
+      <BlockHeader title="荣誉证书" @addItem="data.certificateOfHonor.push({})" :disabled="data.disabled" :color="props.color">
         <template #icon>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
             width="24" height="36" viewBox="0 0 24 36">
@@ -117,7 +119,7 @@
         </template>
       </BlockHeader>
 
-      <BlockHeader title="自我评价" :disabled="data.disabled">
+      <BlockHeader title="自我评价" :disabled="data.disabled" :color="props.color">
         <template #icon>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
             width="32" height="26.666667938232422" viewBox="0 0 32 26.666667938232422">
@@ -156,6 +158,10 @@ const props = defineProps({
   disabled: {
     type: Boolean,
     default: true
+  },
+  color: {
+    type: String,
+    default: "rgb(207, 207, 207)"
   }
 })
 
@@ -179,7 +185,6 @@ const setDisable = (flag) => {
 #ru-left {
   width: 25.48076923076923%;
   height: 100%;
-  background-color: rgb(207, 207, 207);
 
   min-height: 10px;
 }
