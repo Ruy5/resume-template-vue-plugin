@@ -25,8 +25,8 @@ app.mount('#app')
 ```vue
 <template>
     <div class="box">
-        <ResumeTemplateA :data="data"  :disabled="disabled"></ResumeTemplateA>
-        <!-- <ResumeTemplateB ></ResumeTemplateB> -->
+        <ResumeTemplateA :data="data"  :disabled="disabled" color="red"></ResumeTemplateA>
+        <ResumeTemplateB :data="data"  :disabled="disabled" color="red"></ResumeTemplateB>
     </div>
    
 </template>
