@@ -7,7 +7,7 @@
     </div>
     <div id="ru-left">
       <div id="ru-avatar">
-        <img :src="data.avatar" alt="" srcset="">
+        <img :src="data.avatar" alt="" srcset="" @click="uploadImgHook">
       </div>
       <div class="ru-left-kw-box">
 
@@ -149,7 +149,14 @@ defineOptions({
   name: "ResumeTemplateA"
 })
 
+const emit = defineEmits(["uploadImg"])
 
+const uploadImgHook = () => {
+  emit("uploadImg")
+  // console.log(rufs)
+  // const res = await simpleUpload(props.uploadUrl, props.project)
+  // console.log(res)
+}
 const props = defineProps({
   data: {
     type: Object,

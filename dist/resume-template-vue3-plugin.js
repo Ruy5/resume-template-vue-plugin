@@ -1,13 +1,13 @@
-import { openBlock as n, createElementBlock as r, createElementVNode as e, normalizeStyle as $, renderSlot as M, createTextVNode as w, toDisplayString as T, createCommentVNode as V, pushScopeId as Z, popScopeId as A, toRefs as O, unref as t, Fragment as v, renderList as x, withDirectives as s, vModelText as a, createVNode as f, withCtx as C } from "vue";
-const j = (c, m) => {
-  const l = c.__vccOpts || c;
-  for (const [h, o] of m)
-    l[h] = o;
-  return l;
-}, H = (c) => (Z("data-v-e4366b00"), c = c(), A(), c), N = {
+import { openBlock as a, createElementBlock as n, createElementVNode as e, normalizeStyle as U, renderSlot as M, createTextVNode as x, toDisplayString as $, createCommentVNode as w, pushScopeId as Z, popScopeId as A, toRefs as H, unref as d, Fragment as m, renderList as y, withDirectives as i, vModelText as s, createVNode as v, withCtx as h } from "vue";
+const j = (p, C) => {
+  const _ = p.__vccOpts || p;
+  for (const [b, c] of C)
+    _[b] = c;
+  return _;
+}, q = (p) => (Z("data-v-e4366b00"), p = p(), A(), p), N = {
   class: "ru-educational-background",
   style: { "margin-bottom": "1rem" }
-}, z = { class: "ru-educational-background-title" }, R = ["fill"], K = /* @__PURE__ */ H(() => /* @__PURE__ */ e("path", {
+}, z = { class: "ru-educational-background-title" }, R = ["fill"], K = /* @__PURE__ */ q(() => /* @__PURE__ */ e("path", {
   d: "M514.048 62.464q93.184 0 175.616 35.328t143.872 96.768 96.768 143.872 35.328 175.616q0 94.208-35.328 176.128t-96.768 143.36-143.872 96.768-175.616 35.328q-94.208 0-176.64-35.328t-143.872-96.768-96.768-143.36-35.328-176.128q0-93.184 35.328-175.616t96.768-143.872 143.872-96.768 176.64-35.328zM772.096 576.512q26.624 0 45.056-18.944t18.432-45.568-18.432-45.056-45.056-18.432l-192.512 0 0-192.512q0-26.624-18.944-45.568t-45.568-18.944-45.056 18.944-18.432 45.568l0 192.512-192.512 0q-26.624 0-45.056 18.432t-18.432 45.056 18.432 45.568 45.056 18.944l192.512 0 0 191.488q0 26.624 18.432 45.568t45.056 18.944 45.568-18.944 18.944-45.568l0-191.488 192.512 0z",
   "p-id": "4266"
 }, null, -1)), D = [
@@ -16,32 +16,32 @@ const j = (c, m) => {
   __name: "BlockHeaderA",
   props: ["title", "disabled", "color"],
   emits: ["addItem"],
-  setup(c, { emit: m }) {
-    const l = c, h = m, o = () => h("addItem");
-    return (g, b) => (n(), r("div", N, [
+  setup(p, { emit: C }) {
+    const _ = p, b = C, c = () => b("addItem");
+    return (l, g) => (a(), n("div", N, [
       e("div", z, [
         e("div", {
           class: "ru-icon-bg",
-          style: $({
-            "background-color": l.color
+          style: U({
+            "background-color": _.color
           })
         }, [
-          M(g.$slots, "icon", {}, void 0, !0)
+          M(l.$slots, "icon", {}, void 0, !0)
         ], 4),
         e("div", {
           class: "ru-educational-background-title-text",
-          style: $([{ display: "flex", "align-items": "center", "justify-content": "space-between" }, {
-            "border-bottom": "solid 1px " + l.color
+          style: U([{ display: "flex", "align-items": "center", "justify-content": "space-between" }, {
+            "border-bottom": "solid 1px " + _.color
           }])
         }, [
-          w(T(l.title) + " ", 1),
+          x($(_.title) + " ", 1),
           e("div", {
             style: { height: "2rem" },
-            onClick: o
+            onClick: c
           }, [
-            l.disabled ? V("", !0) : (n(), r("svg", {
+            _.disabled ? w("", !0) : (a(), n("svg", {
               key: 0,
-              fill: l.color,
+              fill: _.color,
               style: { width: "100%", height: "100%" },
               t: "1718784482580",
               class: "icon",
@@ -56,14 +56,14 @@ const j = (c, m) => {
         ], 4)
       ]),
       e("div", P, [
-        M(g.$slots, "context", {}, void 0, !0)
+        M(l.$slots, "context", {}, void 0, !0)
       ])
     ]));
   }
-}, B = /* @__PURE__ */ j(X, [["__scopeId", "data-v-e4366b00"]]), U = (c) => (Z("data-v-0a3dd7d5"), c = c(), A(), c), F = { id: "ru-left" }, L = { id: "ru-avatar" }, G = ["src"], J = { class: "ru-left-kw-box" }, Q = {
+}, k = /* @__PURE__ */ j(X, [["__scopeId", "data-v-e4366b00"]]), f = (p) => (Z("data-v-be3ea85c"), p = p(), A(), p), F = { id: "ru-left" }, L = { id: "ru-avatar" }, G = ["src"], J = { class: "ru-left-kw-box" }, Q = {
   key: 0,
   class: "ru-left-key"
-}, W = ["onUpdate:modelValue"], Y = { class: "ru-left-word" }, I = ["onUpdate:modelValue", "disabled"], ee = { id: "ru-right" }, te = { class: "ru-personage" }, le = /* @__PURE__ */ U(() => /* @__PURE__ */ e("div", { class: "ru-personage-title" }, "个人简历", -1)), de = { class: "ru-personage-kws" }, oe = ["disabled", "onUpdate:modelValue"], ie = ["onUpdate:modelValue", "disabled"], se = /* @__PURE__ */ U(() => /* @__PURE__ */ e("svg", {
+}, W = ["onUpdate:modelValue"], Y = { class: "ru-left-word" }, I = ["onUpdate:modelValue", "disabled"], ee = { id: "ru-right" }, te = { class: "ru-personage" }, le = /* @__PURE__ */ f(() => /* @__PURE__ */ e("div", { class: "ru-personage-title" }, "个人简历", -1)), de = { class: "ru-personage-kws" }, oe = ["disabled", "onUpdate:modelValue"], ie = ["onUpdate:modelValue", "disabled"], se = /* @__PURE__ */ f(() => /* @__PURE__ */ e("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   "xmlns:xlink": "http://www.w3.org/1999/xlink",
   fill: "none",
@@ -80,7 +80,7 @@ const j = (c, m) => {
       "fill-opacity": "1"
     })
   ])
-], -1)), ae = { style: { display: "flex", "justify-content": "space-between", "margin-top": "1rem" } }, ne = { style: { display: "flex" } }, re = ["onUpdate:modelValue", "disabled"], pe = ["onUpdate:modelValue", "disabled"], ue = ["onUpdate:modelValue", "disabled"], ce = ["onUpdate:modelValue", "disabled"], _e = { style: { transform: "translateX(0.2rem)" } }, he = { style: { display: "flex" } }, me = /* @__PURE__ */ U(() => /* @__PURE__ */ e("div", { style: { width: "20%" } }, "专业成绩：", -1)), ye = ["onUpdate:modelValue", "disabled"], Ce = { style: { display: "flex" } }, be = /* @__PURE__ */ U(() => /* @__PURE__ */ e("div", { style: { width: "20%" } }, "主修课程：", -1)), ve = ["onUpdate:modelValue", "disabled"], xe = /* @__PURE__ */ U(() => /* @__PURE__ */ e("svg", {
+], -1)), ae = { style: { display: "flex", "justify-content": "space-between", "margin-top": "1rem" } }, ne = { style: { display: "flex" } }, re = ["onUpdate:modelValue", "disabled"], pe = ["onUpdate:modelValue", "disabled"], ce = ["onUpdate:modelValue", "disabled"], ue = ["onUpdate:modelValue", "disabled"], _e = { style: { transform: "translateX(0.2rem)" } }, he = { style: { display: "flex" } }, me = /* @__PURE__ */ f(() => /* @__PURE__ */ e("div", { style: { width: "20%" } }, "专业成绩：", -1)), ye = ["onUpdate:modelValue", "disabled"], Ce = { style: { display: "flex" } }, be = /* @__PURE__ */ f(() => /* @__PURE__ */ e("div", { style: { width: "20%" } }, "主修课程：", -1)), ve = ["onUpdate:modelValue", "disabled"], xe = /* @__PURE__ */ f(() => /* @__PURE__ */ e("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   "xmlns:xlink": "http://www.w3.org/1999/xlink",
   fill: "none",
@@ -97,7 +97,7 @@ const j = (c, m) => {
       "fill-opacity": "1"
     })
   ])
-], -1)), ge = { style: { display: "flex", "justify-content": "space-between", "margin-top": "1rem" } }, fe = { style: { display: "flex" } }, we = ["onUpdate:modelValue", "disabled"], Ue = ["onUpdate:modelValue", "disabled"], Ve = ["onUpdate:modelValue", "disabled"], $e = ["onUpdate:modelValue", "disabled"], ke = ["onUpdate:modelValue", "disabled"], Te = /* @__PURE__ */ U(() => /* @__PURE__ */ e("svg", {
+], -1)), ge = { style: { display: "flex", "justify-content": "space-between", "margin-top": "1rem" } }, fe = { style: { display: "flex" } }, we = ["onUpdate:modelValue", "disabled"], Ue = ["onUpdate:modelValue", "disabled"], Ve = ["onUpdate:modelValue", "disabled"], $e = ["onUpdate:modelValue", "disabled"], ke = ["onUpdate:modelValue", "disabled"], Te = /* @__PURE__ */ f(() => /* @__PURE__ */ e("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   "xmlns:xlink": "http://www.w3.org/1999/xlink",
   fill: "none",
@@ -114,7 +114,7 @@ const j = (c, m) => {
       "fill-opacity": "1"
     })
   ])
-], -1)), Be = ["onUpdate:modelValue", "disabled"], Me = ["onUpdate:modelValue", "disabled"], Ze = ["onUpdate:modelValue", "disabled"], Ae = /* @__PURE__ */ U(() => /* @__PURE__ */ e("svg", {
+], -1)), Be = ["onUpdate:modelValue", "disabled"], Me = ["onUpdate:modelValue", "disabled"], Ze = ["onUpdate:modelValue", "disabled"], Ae = /* @__PURE__ */ f(() => /* @__PURE__ */ e("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   "xmlns:xlink": "http://www.w3.org/1999/xlink",
   fill: "none",
@@ -149,51 +149,55 @@ const j = (c, m) => {
       default: "rgb(207, 207, 207)"
     }
   },
-  setup(c) {
-    const m = c, { data: l, disabled: h } = O(m), o = (g) => {
-      h && (l.value.disabled = !l.value.disabled);
+  emits: ["uploadImg"],
+  setup(p, { emit: C }) {
+    const _ = C, b = () => {
+      _("uploadImg");
+    }, c = p, { data: l, disabled: g } = H(c), T = (B) => {
+      g && (l.value.disabled = !l.value.disabled);
     };
-    return (g, b) => (n(), r("div", {
+    return (B, u) => (a(), n("div", {
       id: "ru-page",
-      style: $({
-        "background-color": m.color
+      style: U({
+        "background-color": c.color
       })
     }, [
-      t(h) ? V("", !0) : (n(), r("div", {
+      d(g) ? w("", !0) : (a(), n("div", {
         key: 0,
         style: { position: "absolute", "z-index": "2", right: "0.5rem", top: "0.5" },
-        onClick: o
-      }, T(t(l).disabled == !0 ? "预览" : "编辑"), 1)),
+        onClick: T
+      }, $(d(l).disabled == !0 ? "预览" : "编辑"), 1)),
       e("div", F, [
         e("div", L, [
           e("img", {
-            src: t(l).avatar,
+            src: d(l).avatar,
             alt: "",
-            srcset: ""
+            srcset: "",
+            onClick: b
           }, null, 8, G)
         ]),
         e("div", J, [
-          (n(!0), r(v, null, x(t(l).baseKw, (d, p) => (n(), r("div", {
+          (a(!0), n(m, null, y(d(l).baseKw, (t, o) => (a(), n("div", {
             class: "ru-left-kw",
-            key: p
+            key: o
           }, [
-            t(l).disabled ? (n(), r("div", Q, T(d[0]), 1)) : V("", !0),
-            t(l).disabled ? V("", !0) : s((n(), r("input", {
+            d(l).disabled ? (a(), n("div", Q, $(t[0]), 1)) : w("", !0),
+            d(l).disabled ? w("", !0) : i((a(), n("input", {
               key: 1,
               type: "text",
-              "onUpdate:modelValue": (_) => d[0] = _,
+              "onUpdate:modelValue": (r) => t[0] = r,
               style: { width: "4rem" }
             }, null, 8, W)), [
-              [a, d[0]]
+              [s, t[0]]
             ]),
-            w(" :  "),
+            x(" :  "),
             e("div", Y, [
-              s(e("input", {
-                "onUpdate:modelValue": (_) => d[1] = _,
+              i(e("input", {
+                "onUpdate:modelValue": (r) => t[1] = r,
                 type: "text",
-                disabled: t(l).disabled
+                disabled: d(l).disabled
               }, null, 8, I), [
-                [a, d[1]]
+                [s, t[1]]
               ])
             ])
           ]))), 128))
@@ -203,106 +207,106 @@ const j = (c, m) => {
         e("div", te, [
           le,
           e("div", de, [
-            (n(!0), r(v, null, x(t(l).jobKw, (d, p) => (n(), r("div", {
+            (a(!0), n(m, null, y(d(l).jobKw, (t, o) => (a(), n("div", {
               class: "ru-personage-item",
-              key: p
+              key: o
             }, [
-              s(e("input", {
+              i(e("input", {
                 type: "text",
-                disabled: t(l).disabled,
-                "onUpdate:modelValue": (_) => d[0] = _,
+                disabled: d(l).disabled,
+                "onUpdate:modelValue": (r) => t[0] = r,
                 style: { width: "4rem" }
               }, null, 8, oe), [
-                [a, d[0]]
+                [s, t[0]]
               ]),
-              w(" :  "),
-              s(e("input", {
+              x(" :  "),
+              i(e("input", {
                 type: "text",
-                "onUpdate:modelValue": (_) => d[1] = _,
-                disabled: t(l).disabled
+                "onUpdate:modelValue": (r) => t[1] = r,
+                disabled: d(l).disabled
               }, null, 8, ie), [
-                [a, d[1]]
+                [s, t[1]]
               ])
             ]))), 128))
           ])
         ]),
-        f(B, {
+        v(k, {
           title: "教育背景",
-          onAddItem: b[0] || (b[0] = (d) => t(l).educationalBackground.push({})),
-          disabled: t(l).disabled,
-          color: m.color
+          onAddItem: u[0] || (u[0] = (t) => d(l).educationalBackground.push({})),
+          disabled: d(l).disabled,
+          color: c.color
         }, {
-          icon: C(() => [
+          icon: h(() => [
             se
           ]),
-          context: C(() => [
-            (n(!0), r(v, null, x(t(l).educationalBackground, (d) => (n(), r("div", null, [
+          context: h(() => [
+            (a(!0), n(m, null, y(d(l).educationalBackground, (t) => (a(), n("div", null, [
               e("div", ae, [
                 e("div", ne, [
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
                     placeholder: "开始时间",
-                    "onUpdate:modelValue": (p) => d.starTime = p,
+                    "onUpdate:modelValue": (o) => t.starTime = o,
                     style: { width: "5rem" },
-                    disabled: t(l).disabled
+                    disabled: d(l).disabled
                   }, null, 8, re), [
-                    [a, d.starTime]
+                    [s, t.starTime]
                   ]),
-                  w(" - "),
-                  s(e("input", {
+                  x(" - "),
+                  i(e("input", {
                     type: "text",
                     placeholder: "结束时间",
-                    "onUpdate:modelValue": (p) => d.endTime = p,
+                    "onUpdate:modelValue": (o) => t.endTime = o,
                     style: { width: "5rem" },
-                    disabled: t(l).disabled
+                    disabled: d(l).disabled
                   }, null, 8, pe), [
-                    [a, d.endTime]
+                    [s, t.endTime]
                   ])
                 ]),
                 e("div", null, [
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
                     placeholder: "就读大学",
-                    "onUpdate:modelValue": (p) => d.collegiate = p,
+                    "onUpdate:modelValue": (o) => t.collegiate = o,
                     style: { "text-align": "center" },
-                    disabled: t(l).disabled
-                  }, null, 8, ue), [
-                    [a, d.collegiate]
+                    disabled: d(l).disabled
+                  }, null, 8, ce), [
+                    [s, t.collegiate]
                   ])
                 ]),
                 e("div", null, [
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
                     placeholder: "就读专业",
-                    "onUpdate:modelValue": (p) => d.profession = p,
+                    "onUpdate:modelValue": (o) => t.profession = o,
                     style: { "text-align": "right" },
-                    disabled: t(l).disabled
-                  }, null, 8, ce), [
-                    [a, d.profession]
+                    disabled: d(l).disabled
+                  }, null, 8, ue), [
+                    [s, t.profession]
                   ])
                 ])
               ]),
               e("div", _e, [
                 e("div", he, [
                   me,
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
-                    "onUpdate:modelValue": (p) => d.professionalAchievement = p,
+                    "onUpdate:modelValue": (o) => t.professionalAchievement = o,
                     placeholder: "请输入专业成绩",
-                    disabled: t(l).disabled
+                    disabled: d(l).disabled
                   }, null, 8, ye), [
-                    [a, d.professionalAchievement]
+                    [s, t.professionalAchievement]
                   ])
                 ]),
                 e("div", Ce, [
                   be,
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
-                    "onUpdate:modelValue": (p) => d.majorCourse = p,
+                    "onUpdate:modelValue": (o) => t.majorCourse = o,
                     placeholder: "请输入主修课程",
-                    disabled: t(l).disabled
+                    disabled: d(l).disabled
                   }, null, 8, ve), [
-                    [a, d.majorCourse]
+                    [s, t.majorCourse]
                   ])
                 ])
               ])
@@ -310,136 +314,136 @@ const j = (c, m) => {
           ]),
           _: 1
         }, 8, ["disabled", "color"]),
-        f(B, {
+        v(k, {
           title: "工作经验",
-          onAddItem: b[1] || (b[1] = (d) => t(l).workExperience.push({})),
-          disabled: t(l).disabled,
-          color: m.color
+          onAddItem: u[1] || (u[1] = (t) => d(l).workExperience.push({})),
+          disabled: d(l).disabled,
+          color: c.color
         }, {
-          icon: C(() => [
+          icon: h(() => [
             xe
           ]),
-          context: C(() => [
-            (n(!0), r(v, null, x(t(l).workExperience, (d) => (n(), r("div", null, [
+          context: h(() => [
+            (a(!0), n(m, null, y(d(l).workExperience, (t) => (a(), n("div", null, [
               e("div", ge, [
                 e("div", fe, [
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
                     placeholder: "开始时间",
-                    "onUpdate:modelValue": (p) => d.starTime = p,
+                    "onUpdate:modelValue": (o) => t.starTime = o,
                     style: { width: "5rem" },
-                    disabled: t(l).disabled
+                    disabled: d(l).disabled
                   }, null, 8, we), [
-                    [a, d.starTime]
+                    [s, t.starTime]
                   ]),
-                  w(" - "),
-                  s(e("input", {
+                  x(" - "),
+                  i(e("input", {
                     type: "text",
                     placeholder: "结束时间",
-                    "onUpdate:modelValue": (p) => d.endTime = p,
+                    "onUpdate:modelValue": (o) => t.endTime = o,
                     style: { width: "5rem" },
-                    disabled: t(l).disabled
+                    disabled: d(l).disabled
                   }, null, 8, Ue), [
-                    [a, d.endTime]
+                    [s, t.endTime]
                   ])
                 ]),
                 e("div", null, [
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
                     placeholder: "工作单位",
-                    "onUpdate:modelValue": (p) => d.workUnit = p,
+                    "onUpdate:modelValue": (o) => t.workUnit = o,
                     style: { "text-align": "center" },
-                    disabled: t(l).disabled
+                    disabled: d(l).disabled
                   }, null, 8, Ve), [
-                    [a, d.workUnit]
+                    [s, t.workUnit]
                   ])
                 ]),
                 e("div", null, [
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
                     placeholder: "工作职位",
-                    "onUpdate:modelValue": (p) => d.jobPosition = p,
+                    "onUpdate:modelValue": (o) => t.jobPosition = o,
                     style: { "text-align": "right" },
-                    disabled: t(l).disabled
+                    disabled: d(l).disabled
                   }, null, 8, $e), [
-                    [a, d.jobPosition]
+                    [s, t.jobPosition]
                   ])
                 ])
               ]),
-              s(e("textarea", {
+              i(e("textarea", {
                 rows: "2",
-                "onUpdate:modelValue": (p) => d.context = p,
+                "onUpdate:modelValue": (o) => t.context = o,
                 style: { width: "100%" },
-                disabled: t(l).disabled
+                disabled: d(l).disabled
               }, `\r
 \r
           `, 8, ke), [
-                [a, d.context]
+                [s, t.context]
               ])
             ]))), 256))
           ]),
           _: 1
         }, 8, ["disabled", "color"]),
-        f(B, {
+        v(k, {
           title: "荣誉证书",
-          onAddItem: b[2] || (b[2] = (d) => t(l).certificateOfHonor.push({})),
-          disabled: t(l).disabled,
-          color: m.color
+          onAddItem: u[2] || (u[2] = (t) => d(l).certificateOfHonor.push({})),
+          disabled: d(l).disabled,
+          color: c.color
         }, {
-          icon: C(() => [
+          icon: h(() => [
             Te
           ]),
-          context: C(() => [
-            (n(!0), r(v, null, x(t(l).certificateOfHonor, (d, p) => (n(), r("div", {
+          context: h(() => [
+            (a(!0), n(m, null, y(d(l).certificateOfHonor, (t, o) => (a(), n("div", {
               style: { display: "flex" },
-              key: p
+              key: o
             }, [
-              s(e("input", {
+              i(e("input", {
                 type: "text",
                 placeholder: "证书名称",
-                "onUpdate:modelValue": (_) => d.certificateName = _,
-                disabled: t(l).disabled
+                "onUpdate:modelValue": (r) => t.certificateName = r,
+                disabled: d(l).disabled
               }, null, 8, Be), [
-                [a, d.certificateName]
+                [s, t.certificateName]
               ]),
-              s(e("input", {
+              i(e("input", {
                 type: "text",
                 placeholder: "获奖时间",
-                "onUpdate:modelValue": (_) => d.awardTime = _,
+                "onUpdate:modelValue": (r) => t.awardTime = r,
                 style: { "text-align": "center" },
-                disabled: t(l).disabled
+                disabled: d(l).disabled
               }, null, 8, Me), [
-                [a, d.awardTime]
+                [s, t.awardTime]
               ]),
-              s(e("input", {
+              i(e("input", {
                 type: "text",
                 placeholder: "颁发单位",
-                "onUpdate:modelValue": (_) => d.issuer = _,
+                "onUpdate:modelValue": (r) => t.issuer = r,
                 style: { "text-align": "right" },
-                disabled: t(l).disabled
+                disabled: d(l).disabled
               }, null, 8, Ze), [
-                [a, d.issuer]
+                [s, t.issuer]
               ])
             ]))), 128))
           ]),
           _: 1
         }, 8, ["disabled", "color"]),
-        f(B, {
+        v(k, {
           title: "自我评价",
-          disabled: t(l).disabled,
-          color: m.color
+          disabled: d(l).disabled,
+          color: c.color
         }, {
-          icon: C(() => [
+          icon: h(() => [
             Ae
           ]),
-          context: C(() => [
-            s(e("textarea", {
+          context: h(() => [
+            i(e("textarea", {
               rows: "4",
               style: { width: "100%" },
-              "onUpdate:modelValue": b[3] || (b[3] = (d) => t(l).selfEvaluation = d),
-              disabled: t(l).disabled
+              "onUpdate:modelValue": u[3] || (u[3] = (t) => d(l).selfEvaluation = t),
+              disabled: d(l).disabled
             }, null, 8, je), [
-              [a, t(l).selfEvaluation]
+              [s, d(l).selfEvaluation]
             ])
           ]),
           _: 1
@@ -447,22 +451,22 @@ const j = (c, m) => {
       ])
     ], 4));
   }
-}), E = /* @__PURE__ */ j(Ee, [["__scopeId", "data-v-0a3dd7d5"]]), Se = { style: { display: "flex", "align-items": "center", "justify-content": "space-between" } }, Oe = ["fill"], qe = { style: { "margin-top": "1rem" } }, k = {
+}), E = /* @__PURE__ */ j(Ee, [["__scopeId", "data-v-be3ea85c"]]), Se = { style: { display: "flex", "align-items": "center", "justify-content": "space-between" } }, He = ["fill"], Oe = { style: { "margin-top": "1rem" } }, V = {
   __name: "BlockHeaderB",
   props: ["title", "disabled", "color"],
   emits: ["addItem"],
-  setup(c, { emit: m }) {
-    const l = c, h = m, o = () => h("addItem");
-    return (g, b) => (n(), r("div", null, [
+  setup(p, { emit: C }) {
+    const _ = p, b = C, c = () => b("addItem");
+    return (l, g) => (a(), n("div", null, [
       e("div", Se, [
         e("span", {
-          style: $([{ "font-size": "2rem" }, {
-            "border-bottom": "solid 4px " + l.color
+          style: U([{ "font-size": "2rem" }, {
+            "border-bottom": "solid 4px " + _.color
           }])
-        }, T(l.title), 5),
-        l.disabled ? (n(), r("svg", {
+        }, $(_.title), 5),
+        _.disabled ? (a(), n("svg", {
           key: 0,
-          onClick: o,
+          onClick: c,
           style: { height: "2rem", width: "2rem" },
           t: "1718802654871",
           class: "icon",
@@ -475,25 +479,25 @@ const j = (c, m) => {
         }, [
           e("path", {
             d: "M512 1024C229.239611 1024 0.017919 794.741738 0.017919 511.98135 0.017919 229.22096 229.239611-0.000731 512-0.000731 794.760389-0.000731 1023.982081 229.22096 1023.982081 511.98135 1023.982081 794.741738 794.760389 1024 512 1024ZM512 73.176136C269.649625 73.176136 73.158216 269.667545 73.158216 512.017919 73.158216 754.368294 269.649625 950.859703 512 950.859703 754.350375 950.859703 950.841784 754.368294 950.841784 512.017919 950.841784 269.667545 754.350375 73.176136 512 73.176136ZM548.570149 731.438811 475.429851 731.438811 475.429851 548.588068 292.579109 548.588068 292.579109 475.411201 475.429851 475.411201 475.429851 292.560457 548.570149 292.560457 548.570149 475.411201 731.420891 475.411201 731.420891 548.588068 548.570149 548.588068 548.570149 731.438811Z",
-            fill: l.color,
+            fill: _.color,
             "p-id": "4272"
-          }, null, 8, Oe)
-        ])) : V("", !0)
+          }, null, 8, He)
+        ])) : w("", !0)
       ]),
       e("div", {
-        style: $([{ "margin-top": "4px" }, {
-          "border-bottom": "solid 1px " + l.color
+        style: U([{ "margin-top": "4px" }, {
+          "border-bottom": "solid 1px " + _.color
         }])
       }, null, 4),
-      e("div", qe, [
-        M(g.$slots, "context")
+      e("div", Oe, [
+        M(l.$slots, "context")
       ])
     ]));
   }
-}, q = (c) => (Z("data-v-e60b6d5d"), c = c(), A(), c), He = {
+}, O = (p) => (Z("data-v-c62839ed"), p = p(), A(), p), qe = {
   id: "rem-box",
   style: { display: "flex", width: "100%", "background-color": "#ffffff", "flex-direction": "column", "align-items": "center", position: "relative" }
-}, Ne = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, ze = { style: { width: "80%", "padding-right": "2rem" } }, Re = { class: "ru-personage-kws" }, Ke = ["disabled", "onUpdate:modelValue"], De = ["onUpdate:modelValue", "disabled"], Pe = ["disabled", "onUpdate:modelValue"], Xe = ["onUpdate:modelValue", "disabled"], Fe = { style: { width: "20%" } }, Le = ["src"], Ge = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, Je = { style: { width: "100%" } }, Qe = { style: { display: "flex", "justify-content": "space-between", "margin-top": "1rem" } }, We = { style: { display: "flex" } }, Ye = ["onUpdate:modelValue", "disabled"], Ie = ["onUpdate:modelValue", "disabled"], e3 = ["onUpdate:modelValue", "disabled"], t3 = ["onUpdate:modelValue", "disabled"], l3 = { style: { transform: "translateX(0.2rem)" } }, d3 = { style: { display: "flex" } }, o3 = /* @__PURE__ */ q(() => /* @__PURE__ */ e("div", { style: { width: "10%" } }, "专业成绩：", -1)), i3 = ["onUpdate:modelValue", "disabled"], s3 = { style: { display: "flex" } }, a3 = /* @__PURE__ */ q(() => /* @__PURE__ */ e("div", { style: { width: "10%" } }, "主修课程：", -1)), n3 = ["onUpdate:modelValue", "disabled"], r3 = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, p3 = { style: { width: "100%" } }, u3 = { style: { display: "flex", "justify-content": "space-between", "margin-top": "1rem" } }, c3 = { style: { display: "flex" } }, _3 = ["onUpdate:modelValue", "disabled"], h3 = ["onUpdate:modelValue", "disabled"], m3 = ["onUpdate:modelValue", "disabled"], y3 = ["onUpdate:modelValue", "disabled"], C3 = ["onUpdate:modelValue", "disabled"], b3 = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, v3 = { style: { width: "100%" } }, x3 = ["onUpdate:modelValue", "disabled"], g3 = ["onUpdate:modelValue", "disabled"], f3 = ["onUpdate:modelValue", "disabled"], w3 = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, U3 = { style: { width: "100%" } }, V3 = ["disabled"], $3 = /* @__PURE__ */ Object.assign({
+}, Ne = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, ze = { style: { width: "80%", "padding-right": "2rem" } }, Re = { class: "ru-personage-kws" }, Ke = ["disabled", "onUpdate:modelValue"], De = ["onUpdate:modelValue", "disabled"], Pe = ["disabled", "onUpdate:modelValue"], Xe = ["onUpdate:modelValue", "disabled"], Fe = { style: { width: "20%" } }, Le = ["src"], Ge = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, Je = { style: { width: "100%" } }, Qe = { style: { display: "flex", "justify-content": "space-between", "margin-top": "1rem" } }, We = { style: { display: "flex" } }, Ye = ["onUpdate:modelValue", "disabled"], Ie = ["onUpdate:modelValue", "disabled"], e3 = ["onUpdate:modelValue", "disabled"], t3 = ["onUpdate:modelValue", "disabled"], l3 = { style: { transform: "translateX(0.2rem)" } }, d3 = { style: { display: "flex" } }, o3 = /* @__PURE__ */ O(() => /* @__PURE__ */ e("div", { style: { width: "10%" } }, "专业成绩：", -1)), i3 = ["onUpdate:modelValue", "disabled"], s3 = { style: { display: "flex" } }, a3 = /* @__PURE__ */ O(() => /* @__PURE__ */ e("div", { style: { width: "10%" } }, "主修课程：", -1)), n3 = ["onUpdate:modelValue", "disabled"], r3 = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, p3 = { style: { width: "100%" } }, c3 = { style: { display: "flex", "justify-content": "space-between", "margin-top": "1rem" } }, u3 = { style: { display: "flex" } }, _3 = ["onUpdate:modelValue", "disabled"], h3 = ["onUpdate:modelValue", "disabled"], m3 = ["onUpdate:modelValue", "disabled"], y3 = ["onUpdate:modelValue", "disabled"], C3 = ["onUpdate:modelValue", "disabled"], b3 = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, v3 = { style: { width: "100%" } }, x3 = ["onUpdate:modelValue", "disabled"], g3 = ["onUpdate:modelValue", "disabled"], f3 = ["onUpdate:modelValue", "disabled"], w3 = { style: { width: "95%", margin: "1rem 0", display: "flex" } }, U3 = { style: { width: "100%" } }, V3 = ["disabled"], $3 = /* @__PURE__ */ Object.assign({
   name: "ResumeTemplateB"
 }, {
   __name: "ResumeTemplateB",
@@ -512,73 +516,73 @@ const j = (c, m) => {
     }
   },
   emits: ["uploadImg"],
-  setup(c, { emit: m }) {
-    const l = m, h = c, { data: o, disabled: g } = O(h), b = () => {
-      l("uploadImg");
-    }, d = (p) => {
-      g && (o.value.disabled = !o.value.disabled);
+  setup(p, { emit: C }) {
+    const _ = C, b = () => {
+      _("uploadImg");
+    }, c = p, { data: l, disabled: g } = H(c), T = (B) => {
+      g && (l.value.disabled = !l.value.disabled);
     };
-    return (p, _) => (n(), r("div", He, [
-      t(g) ? V("", !0) : (n(), r("div", {
+    return (B, u) => (a(), n("div", qe, [
+      d(g) ? w("", !0) : (a(), n("div", {
         key: 0,
         style: { position: "absolute", "z-index": "2", right: "0.5rem", top: "0.5" },
-        onClick: d
-      }, T(t(o).disabled == !0 ? "预览" : "编辑"), 1)),
+        onClick: T
+      }, $(d(l).disabled == !0 ? "预览" : "编辑"), 1)),
       e("div", {
-        style: $([{ height: "4rem", width: "95%", margin: "1rem 0", display: "flex", "align-items": "center", "justify-content": "center", color: "white", "font-size": "2rem" }, {
-          "background-color": h.color
+        style: U([{ height: "4rem", width: "95%", margin: "1rem 0", display: "flex", "align-items": "center", "justify-content": "center", color: "white", "font-size": "2rem" }, {
+          "background-color": c.color
         }])
       }, " 个人简历 ", 4),
       e("div", Ne, [
         e("div", ze, [
-          f(k, {
+          v(V, {
             title: "基本信息",
-            onAddItem: _[0] || (_[0] = (i) => t(o).baseKw.push(["", ""])),
-            disabled: t(o).disabled,
-            color: h.color
+            onAddItem: u[0] || (u[0] = (t) => d(l).baseKw.push(["", ""])),
+            disabled: d(l).disabled,
+            color: c.color
           }, {
-            context: C(() => [
+            context: h(() => [
               e("div", Re, [
-                (n(!0), r(v, null, x(t(o).jobKw, (i, u) => (n(), r("div", {
+                (a(!0), n(m, null, y(d(l).jobKw, (t, o) => (a(), n("div", {
                   class: "ru-personage-item",
-                  key: u
+                  key: o
                 }, [
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
-                    disabled: t(o).disabled,
-                    "onUpdate:modelValue": (y) => i[0] = y,
+                    disabled: d(l).disabled,
+                    "onUpdate:modelValue": (r) => t[0] = r,
                     style: { width: "4rem" }
                   }, null, 8, Ke), [
-                    [a, i[0]]
+                    [s, t[0]]
                   ]),
-                  w(" :  "),
-                  s(e("input", {
+                  x(" :  "),
+                  i(e("input", {
                     type: "text",
-                    "onUpdate:modelValue": (y) => i[1] = y,
-                    disabled: t(o).disabled
+                    "onUpdate:modelValue": (r) => t[1] = r,
+                    disabled: d(l).disabled
                   }, null, 8, De), [
-                    [a, i[1]]
+                    [s, t[1]]
                   ])
                 ]))), 128)),
-                (n(!0), r(v, null, x(t(o).baseKw, (i, u) => (n(), r("div", {
+                (a(!0), n(m, null, y(d(l).baseKw, (t, o) => (a(), n("div", {
                   class: "ru-personage-item",
-                  key: u
+                  key: o
                 }, [
-                  s(e("input", {
+                  i(e("input", {
                     type: "text",
-                    disabled: t(o).disabled,
-                    "onUpdate:modelValue": (y) => i[0] = y,
+                    disabled: d(l).disabled,
+                    "onUpdate:modelValue": (r) => t[0] = r,
                     style: { width: "4rem" }
                   }, null, 8, Pe), [
-                    [a, i[0]]
+                    [s, t[0]]
                   ]),
-                  w(" :  "),
-                  s(e("input", {
+                  x(" :  "),
+                  i(e("input", {
                     type: "text",
-                    "onUpdate:modelValue": (y) => i[1] = y,
-                    disabled: t(o).disabled
+                    "onUpdate:modelValue": (r) => t[1] = r,
+                    disabled: d(l).disabled
                   }, null, 8, Xe), [
-                    [a, i[1]]
+                    [s, t[1]]
                   ])
                 ]))), 128))
               ])
@@ -589,7 +593,7 @@ const j = (c, m) => {
         e("div", Fe, [
           e("img", {
             style: { width: "100%" },
-            src: t(o).avatar,
+            src: d(l).avatar,
             alt: "",
             srcset: "",
             onClick: b
@@ -598,82 +602,82 @@ const j = (c, m) => {
       ]),
       e("div", Ge, [
         e("div", Je, [
-          f(k, {
+          v(V, {
             title: "教育背景",
-            onAddItem: _[1] || (_[1] = (i) => t(o).educationalBackground.push({})),
-            disabled: t(o).disabled,
-            color: h.color
+            onAddItem: u[1] || (u[1] = (t) => d(l).educationalBackground.push({})),
+            disabled: d(l).disabled,
+            color: c.color
           }, {
-            context: C(() => [
-              (n(!0), r(v, null, x(t(o).educationalBackground, (i) => (n(), r("div", null, [
+            context: h(() => [
+              (a(!0), n(m, null, y(d(l).educationalBackground, (t) => (a(), n("div", null, [
                 e("div", Qe, [
                   e("div", We, [
-                    s(e("input", {
+                    i(e("input", {
                       type: "text",
                       placeholder: "开始时间",
-                      "onUpdate:modelValue": (u) => i.starTime = u,
+                      "onUpdate:modelValue": (o) => t.starTime = o,
                       style: { width: "5rem" },
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, Ye), [
-                      [a, i.starTime]
+                      [s, t.starTime]
                     ]),
-                    w(" - "),
-                    s(e("input", {
+                    x(" - "),
+                    i(e("input", {
                       type: "text",
                       placeholder: "结束时间",
-                      "onUpdate:modelValue": (u) => i.endTime = u,
+                      "onUpdate:modelValue": (o) => t.endTime = o,
                       style: { width: "5rem" },
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, Ie), [
-                      [a, i.endTime]
+                      [s, t.endTime]
                     ])
                   ]),
                   e("div", null, [
-                    s(e("input", {
+                    i(e("input", {
                       type: "text",
                       placeholder: "就读大学",
-                      "onUpdate:modelValue": (u) => i.collegiate = u,
+                      "onUpdate:modelValue": (o) => t.collegiate = o,
                       style: { "text-align": "center" },
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, e3), [
-                      [a, i.collegiate]
+                      [s, t.collegiate]
                     ])
                   ]),
                   e("div", null, [
-                    s(e("input", {
+                    i(e("input", {
                       type: "text",
                       placeholder: "就读专业",
-                      "onUpdate:modelValue": (u) => i.profession = u,
+                      "onUpdate:modelValue": (o) => t.profession = o,
                       style: { "text-align": "right" },
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, t3), [
-                      [a, i.profession]
+                      [s, t.profession]
                     ])
                   ])
                 ]),
                 e("div", l3, [
                   e("div", d3, [
                     o3,
-                    s(e("input", {
+                    i(e("input", {
                       type: "text",
                       style: { width: "90%" },
-                      "onUpdate:modelValue": (u) => i.professionalAchievement = u,
+                      "onUpdate:modelValue": (o) => t.professionalAchievement = o,
                       placeholder: "请输入专业成绩",
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, i3), [
-                      [a, i.professionalAchievement]
+                      [s, t.professionalAchievement]
                     ])
                   ]),
                   e("div", s3, [
                     a3,
-                    s(e("input", {
+                    i(e("input", {
                       type: "text",
                       style: { width: "90%" },
-                      "onUpdate:modelValue": (u) => i.majorCourse = u,
+                      "onUpdate:modelValue": (o) => t.majorCourse = o,
                       placeholder: "请输入主修课程",
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, n3), [
-                      [a, i.majorCourse]
+                      [s, t.majorCourse]
                     ])
                   ])
                 ])
@@ -685,68 +689,68 @@ const j = (c, m) => {
       ]),
       e("div", r3, [
         e("div", p3, [
-          f(k, {
+          v(V, {
             title: "工作经验",
-            onAddItem: _[2] || (_[2] = (i) => t(o).workExperience.push({})),
-            disabled: t(o).disabled,
-            color: h.color
+            onAddItem: u[2] || (u[2] = (t) => d(l).workExperience.push({})),
+            disabled: d(l).disabled,
+            color: c.color
           }, {
-            context: C(() => [
-              (n(!0), r(v, null, x(t(o).workExperience, (i) => (n(), r("div", null, [
-                e("div", u3, [
-                  e("div", c3, [
-                    s(e("input", {
+            context: h(() => [
+              (a(!0), n(m, null, y(d(l).workExperience, (t) => (a(), n("div", null, [
+                e("div", c3, [
+                  e("div", u3, [
+                    i(e("input", {
                       type: "text",
                       placeholder: "开始时间",
-                      "onUpdate:modelValue": (u) => i.starTime = u,
+                      "onUpdate:modelValue": (o) => t.starTime = o,
                       style: { width: "5rem" },
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, _3), [
-                      [a, i.starTime]
+                      [s, t.starTime]
                     ]),
-                    w(" - "),
-                    s(e("input", {
+                    x(" - "),
+                    i(e("input", {
                       type: "text",
                       placeholder: "结束时间",
-                      "onUpdate:modelValue": (u) => i.endTime = u,
+                      "onUpdate:modelValue": (o) => t.endTime = o,
                       style: { width: "5rem" },
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, h3), [
-                      [a, i.endTime]
+                      [s, t.endTime]
                     ])
                   ]),
                   e("div", null, [
-                    s(e("input", {
+                    i(e("input", {
                       type: "text",
                       placeholder: "工作单位",
-                      "onUpdate:modelValue": (u) => i.workUnit = u,
+                      "onUpdate:modelValue": (o) => t.workUnit = o,
                       style: { "text-align": "center" },
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, m3), [
-                      [a, i.workUnit]
+                      [s, t.workUnit]
                     ])
                   ]),
                   e("div", null, [
-                    s(e("input", {
+                    i(e("input", {
                       type: "text",
                       placeholder: "工作职位",
-                      "onUpdate:modelValue": (u) => i.jobPosition = u,
+                      "onUpdate:modelValue": (o) => t.jobPosition = o,
                       style: { "text-align": "right" },
-                      disabled: t(o).disabled
+                      disabled: d(l).disabled
                     }, null, 8, y3), [
-                      [a, i.jobPosition]
+                      [s, t.jobPosition]
                     ])
                   ])
                 ]),
-                s(e("textarea", {
+                i(e("textarea", {
                   rows: "2",
-                  "onUpdate:modelValue": (u) => i.context = u,
+                  "onUpdate:modelValue": (o) => t.context = o,
                   style: { width: "100%" },
-                  disabled: t(o).disabled
+                  disabled: d(l).disabled
                 }, `\r
 \r
           `, 8, C3), [
-                  [a, i.context]
+                  [s, t.context]
                 ])
               ]))), 256))
             ]),
@@ -756,42 +760,42 @@ const j = (c, m) => {
       ]),
       e("div", b3, [
         e("div", v3, [
-          f(k, {
+          v(V, {
             title: "荣誉证书",
-            onAddItem: _[3] || (_[3] = (i) => t(o).certificateOfHonor.push({})),
-            disabled: t(o).disabled,
-            color: h.color
+            onAddItem: u[3] || (u[3] = (t) => d(l).certificateOfHonor.push({})),
+            disabled: d(l).disabled,
+            color: c.color
           }, {
-            context: C(() => [
-              (n(!0), r(v, null, x(t(o).certificateOfHonor, (i, u) => (n(), r("div", {
+            context: h(() => [
+              (a(!0), n(m, null, y(d(l).certificateOfHonor, (t, o) => (a(), n("div", {
                 style: { display: "flex", "justify-content": "space-between" },
-                key: u
+                key: o
               }, [
-                s(e("input", {
+                i(e("input", {
                   type: "text",
                   placeholder: "证书名称",
-                  "onUpdate:modelValue": (y) => i.certificateName = y,
-                  disabled: t(o).disabled
+                  "onUpdate:modelValue": (r) => t.certificateName = r,
+                  disabled: d(l).disabled
                 }, null, 8, x3), [
-                  [a, i.certificateName]
+                  [s, t.certificateName]
                 ]),
-                s(e("input", {
+                i(e("input", {
                   type: "text",
                   placeholder: "获奖时间",
-                  "onUpdate:modelValue": (y) => i.awardTime = y,
+                  "onUpdate:modelValue": (r) => t.awardTime = r,
                   style: { "text-align": "center" },
-                  disabled: t(o).disabled
+                  disabled: d(l).disabled
                 }, null, 8, g3), [
-                  [a, i.awardTime]
+                  [s, t.awardTime]
                 ]),
-                s(e("input", {
+                i(e("input", {
                   type: "text",
                   placeholder: "颁发单位",
-                  "onUpdate:modelValue": (y) => i.issuer = y,
+                  "onUpdate:modelValue": (r) => t.issuer = r,
                   style: { "text-align": "right" },
-                  disabled: t(o).disabled
+                  disabled: d(l).disabled
                 }, null, 8, f3), [
-                  [a, i.issuer]
+                  [s, t.issuer]
                 ])
               ]))), 128))
             ]),
@@ -801,18 +805,18 @@ const j = (c, m) => {
       ]),
       e("div", w3, [
         e("div", U3, [
-          f(k, {
+          v(V, {
             title: "自我评价",
-            color: h.color
+            color: c.color
           }, {
-            context: C(() => [
-              s(e("textarea", {
+            context: h(() => [
+              i(e("textarea", {
                 rows: "4",
                 style: { width: "100%" },
-                "onUpdate:modelValue": _[4] || (_[4] = (i) => t(o).selfEvaluation = i),
-                disabled: t(o).disabled
+                "onUpdate:modelValue": u[4] || (u[4] = (t) => d(l).selfEvaluation = t),
+                disabled: d(l).disabled
               }, null, 8, V3), [
-                [a, t(o).selfEvaluation]
+                [s, d(l).selfEvaluation]
               ])
             ]),
             _: 1
@@ -821,9 +825,9 @@ const j = (c, m) => {
       ])
     ]));
   }
-}), S = /* @__PURE__ */ j($3, [["__scopeId", "data-v-e60b6d5d"]]), T3 = {
-  install: (c) => {
-    c.component(E.name, E), c.component(S.name, S);
+}), S = /* @__PURE__ */ j($3, [["__scopeId", "data-v-c62839ed"]]), T3 = {
+  install: (p) => {
+    p.component(E.name, E), p.component(S.name, S);
   }
 };
 export {

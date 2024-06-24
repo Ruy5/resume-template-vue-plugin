@@ -156,6 +156,13 @@ defineOptions({
 
 const emit = defineEmits(["uploadImg"])
 
+const uploadImgHook = () => {
+  emit("uploadImg")
+  // console.log(rufs)
+  // const res = await simpleUpload(props.uploadUrl, props.project)
+  // console.log(res)
+}
+
 const props = defineProps({
   data: {
     type: Object,
@@ -173,12 +180,7 @@ const props = defineProps({
 
 const { data, disabled } = toRefs(props)
 
-const uploadImgHook = () => {
-  emit("uploadImg")
-  // console.log(rufs)
-  // const res = await simpleUpload(props.uploadUrl, props.project)
-  // console.log(res)
-}
+
 
 const setDisable = (flag) => {
   if (disabled) {
