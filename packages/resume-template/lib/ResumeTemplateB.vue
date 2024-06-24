@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex; width: 100%; background-color: #ffffff; flex-direction: column; align-items: center; position: relative;">
+  <div id="rem-box" style="display: flex; width: 100%; background-color: #ffffff; flex-direction: column; align-items: center; position: relative;">
     <div v-if="!disabled" style="position: absolute; z-index: 2; right: 0.5rem; top: 0.5;" @click="setDisable">
       {{ data.disabled == true ? "预览" : "编辑" }}
     </div>
@@ -44,7 +44,7 @@
         </BlockHeader>
       </div>
       <div style="width: 20%;">
-        <img style="width: 100%;" :src="data.avatar" alt="" srcset="">
+        <img style="width: 100%;" :src="data.avatar" alt="" srcset="" @click="uploadImgHook">
       </div>
     </div>
 
@@ -154,6 +154,8 @@ defineOptions({
   name: "ResumeTemplateB"
 })
 
+const emit = defineEmits(["uploadImg"])
+
 const props = defineProps({
   data: {
     type: Object,
@@ -166,10 +168,17 @@ const props = defineProps({
   color: {
     type: String,
     default: "#068359"
-  }
+  },
 })
 
 const { data, disabled } = toRefs(props)
+
+const uploadImgHook = () => {
+  emit("uploadImg")
+  // console.log(rufs)
+  // const res = await simpleUpload(props.uploadUrl, props.project)
+  // console.log(res)
+}
 
 const setDisable = (flag) => {
   if (disabled) {
